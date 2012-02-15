@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Url:</b>
+  <%= @puppy.url %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @puppy.name %>
+</p>
+
+<p>
+  <b>Major:</b>
+  <%= @puppy.major %>
+</p>
+
+<p>
+  <b>Minor:</b>
+  <%= @puppy.minor %>
+</p>
+
+
+<%= link_to 'Edit', edit_puppy_path(@puppy) %> |
+<%= link_to 'Back', puppies_path %>

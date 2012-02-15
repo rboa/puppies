@@ -1,0 +1,329 @@
+.hidden {
+  display: none;
+}
+
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.ellipsis.multiline {
+  white-space: normal;
+  text-overflow: clip;
+}
+
+header {
+  font-weight: bold;
+  font-family: "Apex ATT", sans-serif;
+}
+
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  font-family: "Droid Sans", sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+  background-image: url(image-path("issue/cover_background.png"));
+  //background-image: url(image-path("issue/cover_background.png"));
+
+  > article {
+    padding: 1em 0em;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 1)), to(rgba(255, 255, 255, 0)));
+    background-image: -moz-gradient(linear, left top, left bottom, from(rgba(34, 34, 34, 1)), to(rgba(255, 255, 255, 0)));
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: "Apex ATT", sans-serif;
+}
+
+.wide {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0em;
+  margin-bottom: 1em;
+  width: 17.8em;
+}
+
+.hero {
+  height: 8.5em;
+  width: 17em;
+  margin-top: 0em;
+  border-style: solid;
+  border-width: 0.4em;
+  border-color: white;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  position: relative;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  div {
+    margin-top: 4.5em;
+    height: 3.0em;
+    overflow-y: hidden;
+    padding: 0.5em 1em 0.5em 0.5em;
+    background: rgba(0, 0, 0, 0.6);
+    
+    &.bubble_hook {
+      background-image: url("/assets/issue/bubble_hook.png");
+      background-color: transparent;
+      background-size: contain;
+      background-repeat: no-repeat;
+      
+      height: 0.3em;
+      width: 0.5em;
+      
+      position: absolute;
+      top: 4.0em;
+      &.selected2 {
+        left: 13em;
+      }
+      &.selected1 {
+        left: 7em;
+      }
+      &.selected0 {
+        left: 1em;
+      }
+    }
+    
+    header {
+      color: #81C8FF;
+      font-size: 110%;
+      width: 94%;
+    }
+    p {
+      color: #fafbff;
+      position: relative;
+      font-size: 80%;
+      width: 94%;
+    }
+  }
+}
+
+.collection {
+  height: 4.5em;
+  width: 4.5em;
+  background: white;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  border-style: solid;
+  border-color: white;
+  border-width: 0em;
+  background-size:cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  
+  margin: 0.4em;
+  
+  &.shadowed {
+    margin: 0em;
+    border-width: 0.4em;
+  }
+  &#collection-1 {
+    margin: 0.4em 1.15em;
+  }
+  &#collection-1.shadowed {
+    margin: 0em 0.75em;
+  }
+}
+
+.button {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FAFAFA), to(#EFEFEF));
+  border-style: solid;
+  border-width: 0.2em;
+  width: 17.4em;
+  border-color: white;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  height: 3.6em;
+}
+
+.long_button {
+  height: 4.0em;
+  background-size: 3.5em 3.5em;
+  background-position: 0.25em 0.25em;
+  background-repeat: no-repeat;
+  background-color: #F5F5F5;
+  
+  div {
+    padding-left: 4em;
+    height: 4em;
+    display: table-cell;
+    vertical-align: middle;
+    
+    header {
+      width: 14.4em;
+      font-weight: bold;
+      font-size: 92%;
+      color: #206B9E;
+    }
+    p {
+      font-size: 60%;
+      color: #454545;
+      height: 4ex;
+      margin-top: 0.5em;
+    }
+  }
+}
+
+.price_and_picks {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #F5F5F5;
+  display: inline-block;
+  width: 8.0em;
+  
+  &#price {
+    margin-right: 0.8em;
+    float: left;
+  }
+
+  header {
+    font-size: 85%;
+    font-weight: bold;
+    color: white;
+    padding: 0.5em 0em 0em 1em;
+    width: auto;
+  }
+}
+
+.apps {
+  display: inline-block;
+  width: 5em;
+  height: 7em;
+  text-align: center;
+  background-color: #F5F5F5;
+  background-size: 4em 4.5em;
+  background-repeat: no-repeat;
+  background-position: 0.5em 0.4em;
+
+  &#app8 {
+    float:left;
+  }
+  &#app9 {
+    display: block;
+    margin: 0 auto;
+  }
+  &#app10 {
+    float:right;
+    margin-top: -7.4em;
+  }
+  > div {
+    margin-top: 5.3em;
+    header {
+      font-size: 70%;
+      color: #206B9E;
+      font-weight: bold;
+      text-align: left;
+      margin: 0em 0.2em;
+    }
+  }
+}
+
+.hot_on_the_market {
+  height: auto;
+  header {
+    font-size: 100%;
+    color: #206B9E;
+    font-weight: bold;
+    margin: 0.5em 0 0.5em 0.3em;
+    width: 95%;
+  }
+  
+  .arrow{
+    width: 1.5em;
+    height: 3.5em;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    &#left_arrow {
+      float: left;
+      margin-left: 0.5em;
+      &.active{
+        background-image: url(image-path("issue/left_arrow_active.png"));
+      }
+      &.inactive{
+        background-image: url(image-path("issue/left_arrow_inactive.png"));
+      }
+    }
+    &#right_arrow {
+      float: right;
+      margin-right: 0.5em;
+      &.active {
+        background-image: url(image-path("issue/right_arrow_active.png"));
+      }
+      &.inactive {
+        background-image: url(image-path("issue/right_arrow_inactive.png"));
+      }
+    }
+  }
+}
+.hot_apps {
+  overflow: hidden;
+}
+.hot_app {
+  display: inline-block;
+  overflow-x: hidden;
+  color: black;
+  width: 4em;
+  height: 5em;
+  text-align: center;
+  margin: 0 0.2em;
+  
+  img {
+    width: 70%;
+  }
+
+  p {
+    font-size: 70%;
+    width: 100%;
+    font-family: sans-serif;
+  }
+}
+
+.touched {
+  opacity: .7;
+}
+
+.shadowed {
+  position: relative;
+  &:before, &:after {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   bottom: 0.5em;
+   -webkit-box-shadow: 0 0.75em 0.5em rgba(0, 0, 0, 0.6);
+   -moz-box-shadow: 0 0.75em 0.5em rgba(0, 0, 0, 0.6);
+   box-shadow: 0 0.75em 0.5em rgba(0, 0, 0, 0.6);
+   height: 1em;
+   width: 90%;
+   left: 0.5em;
+   -moz-transform: rotate(-3deg);
+   -webkit-transform: rotate(-3deg);
+   transform: rotate(-3deg);
+  }
+  &:after {
+   left: auto;
+   right: 0.5em;
+   -moz-transform: rotate(3deg);
+   -webkit-transform: rotate(3deg);
+   transform: rotate(3deg);
+  }
+}
+
+#messages header, #save_your_life header {
+    overflow: visible;
+}
